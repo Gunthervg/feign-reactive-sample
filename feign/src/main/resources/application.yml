@@ -16,3 +16,11 @@ greeting-other:
   ribbon:
     # the eureka vipAddress of the target service
     DeploymentContextBasedVipAddresses: web-flux-app
+
+logging:
+  level:
+    reactivefeign:
+      client:
+        log: trace
+    sample:
+      trace

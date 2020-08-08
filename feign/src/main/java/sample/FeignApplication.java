@@ -15,7 +15,7 @@ import reactor.core.publisher.Mono;
 @SpringBootApplication
 @EnableEurekaClient
 @RestController
-@EnableReactiveFeignClients
+@EnableReactiveFeignClients(defaultConfiguration = FeignConfig.class)
 @EnableFeignClients
 public class FeignApplication {
 
